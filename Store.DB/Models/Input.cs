@@ -21,5 +21,6 @@ namespace Store.DB.Models
         public int UserId { get; set; }
         public virtual Supplier Supplier { get; set; }
         public int SupplierId { get; set; }
+
     }
 }

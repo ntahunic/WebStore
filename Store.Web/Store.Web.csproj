@@ -97,20 +97,88 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\flexslider.css" />
+    <Content Include="Content\memenu.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
+    <Content Include="Areas\Users\Views\web.config" />
+    <Content Include="fonts\BreeSerif-Regular.ttf" />
+    <Content Include="fonts\Lato-Regular.ttf" />
+    <Content Include="fonts\Lora-Regular.ttf" />
+    <Content Include="fonts\Muli-Regular.ttf" />
+    <Content Include="fonts\Philosopher-Regular.ttf" />
+    <Content Include="Images\11.png" />
+    <Content Include="Images\abt-1.jpg" />
+    <Content Include="Images\abt-2.jpg" />
+    <Content Include="Images\abt-3.jpg" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\bnr-1.jpg" />
+    <Content Include="Images\bnr-2.jpg" />
+    <Content Include="Images\bnr-3.jpg" />
+    <Content Include="Images\c-1.jpg" />
+    <Content Include="Images\c-2.jpg" />
+    <Content Include="Images\c-3.jpg" />
+    <Content Include="Images\cart-1.png" />
+    <Content Include="Images\cart-2.png" />
+    <Content Include="Images\cart-3.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\crossword.png" />
+    <Content Include="Images\p-1.png" />
+    <Content Include="Images\p-2.png" />
+    <Content Include="Images\p-3.png" />
+    <Content Include="Images\p-4.png" />
+    <Content Include="Images\p-5.png" />
+    <Content Include="Images\p-6.png" />
+    <Content Include="Images\p-7.png" />
+    <Content Include="Images\p-8.png" />
+    <Content Include="Images\pr-1.jpg" />
+    <Content Include="Images\pr-2.jpg" />
+    <Content Include="Images\s-1.jpg" />
+    <Content Include="Images\s-2.jpg" />
+    <Content Include="Images\s-3.jpg" />
+    <Content Include="Images\s-icons.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Scripts\imagezoom.js" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery.easydropdown.js" />
+    <Content Include="Scripts\jquery.flexslider.js" />
+    <Content Include="Scripts\memenu.js" />
+    <Content Include="Scripts\responsiveslides.min.js" />
+    <Content Include="Scripts\simpleCart.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
+    <Compile Include="Controllers\AccessDeniedController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Security\CustomPrincipal.cs" />
+    <Compile Include="Security\SessionPersister.cs" />
+    <Compile Include="ViewModels\AccountVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\AccessDenied\Index.cshtml" />
+    <Content Include="Views\Demo\work1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\Account\Success.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,8 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\Home\" />
+    <Folder Include="Areas\Users\Controllers\" />
+    <Folder Include="Areas\Users\Models\" />
+    <Folder Include="Areas\Users\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Store.DB\Store.DB.csproj">

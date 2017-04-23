@@ -9,6 +9,7 @@ namespace Store.DB.Models
     public class OrderDetails
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public int Quantity { get; set; }
 
         public virtual Order Order { get; set; }

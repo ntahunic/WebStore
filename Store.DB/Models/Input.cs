@@ -9,6 +9,7 @@ namespace Store.DB.Models
     public class Input
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public string InputNumber { get; set; }
         public DateTime Date { get; set; }
         public double Total { get; set; }

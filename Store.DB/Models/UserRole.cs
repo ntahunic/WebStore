@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Store.DB.Models
 {
-    public class UserRoles
+    public class UserRole
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public DateTime Date { get; set; }
 
         public virtual User User { get; set; }

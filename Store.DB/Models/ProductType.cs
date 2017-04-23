@@ -9,6 +9,7 @@ namespace Store.DB.Models
     public class ProductType
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public string Name { get; set; }
     }
 }

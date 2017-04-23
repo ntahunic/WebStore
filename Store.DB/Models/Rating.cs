@@ -9,6 +9,7 @@ namespace Store.DB.Models
     public class Rating
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public int Rate { get; set; }
         public DateTime Date { get; set; }
 

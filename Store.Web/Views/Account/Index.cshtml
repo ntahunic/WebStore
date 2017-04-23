@@ -1,0 +1,26 @@
+﻿@model Store.Web.ViewModels.AccountVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    @ViewBag.Error
+    <table>
+        <tr>
+            <td><label>Username</label></td>
+            <td>@Html.TextBoxFor(x => x.Account.Username)</td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td>@Html.PasswordFor(x => x.Account.Password)</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+        </tr>
+    </table>
+}

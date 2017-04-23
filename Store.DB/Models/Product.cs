@@ -9,6 +9,7 @@ namespace Store.DB.Models
     public class Product
     {
         public int Id { get; set; }
+        public bool IsDeleted { get; set; }
         public string ProductNumber { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }

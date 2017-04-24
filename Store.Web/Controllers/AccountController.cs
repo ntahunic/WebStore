@@ -31,6 +31,11 @@ namespace Store.Web.Controllers
 
         }
 
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
         public ActionResult Logout()
         {
             SessionPersister.username = string.Empty;

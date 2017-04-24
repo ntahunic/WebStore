@@ -101,6 +101,7 @@
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\memenu.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\registerLogin.css" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Users\Views\web.config" />
     <Content Include="fonts\BreeSerif-Regular.ttf" />
@@ -143,6 +144,7 @@
     <Content Include="Images\tick.png" />
     <Content Include="Scripts\imagezoom.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.easydropdown.js" />
     <Content Include="Scripts\jquery.flexslider.js" />
     <Content Include="Scripts\memenu.js" />
@@ -179,6 +181,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Account\Success.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

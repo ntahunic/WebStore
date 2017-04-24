@@ -27,8 +27,7 @@ namespace Store.Web.Models
                 _accounts.Add(new Account()
                 {
                     Username = customer.Username,
-                    Password = customer.PasswordHash,
-                    Roles = null
+                    Password = customer.PasswordHash
                 });
             }
         }

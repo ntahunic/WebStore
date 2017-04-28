@@ -16,7 +16,7 @@ namespace Store.Web.Security
                 filterContext.Result = new RedirectToRouteResult(new RouteValueDictionary(new
                 {
                     Controller = "Account",
-                    Action = "Index"
+                    Action = "Login"
                 }));
             else
             {

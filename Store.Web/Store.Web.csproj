@@ -99,9 +99,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\flexslider.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\memenu.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\registerLogin.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Users\Views\web.config" />
     <Content Include="fonts\BreeSerif-Regular.ttf" />
@@ -147,6 +150,9 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.easydropdown.js" />
     <Content Include="Scripts\jquery.flexslider.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\memenu.js" />
     <Content Include="Scripts\responsiveslides.min.js" />
     <Content Include="Scripts\simpleCart.min.js" />
@@ -162,6 +168,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\StringHelper.cs" />
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,13 +182,17 @@
     <Content Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\AccessDenied\Index.cshtml" />
     <Content Include="Views\Demo\work1.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Demo\Index.cshtml" />
-    <Content Include="Views\Account\Success.cshtml" />
     <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -196,9 +207,9 @@
     <Folder Include="Areas\Users\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Store.DB\Store.DB.csproj">
+    <ProjectReference Include="..\Store.Data\Store.Data.csproj">
       <Project>{5449e17c-e172-4d0a-b639-b09a8af3524e}</Project>
-      <Name>Store.DB</Name>
+      <Name>Store.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

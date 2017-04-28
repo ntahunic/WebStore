@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Store.DB.DB;
+using Store.Data.DB;
+using Store.Web.Helper;
 
 namespace Store.Web.Models
 {
@@ -19,7 +20,7 @@ namespace Store.Web.Models
                 {
                     Username = user.Username,
                     Password = user.PasswordHash,
-                    Roles = _ctx.UserRoles.Where(x=>x.UserId == user.Id).Select(y=>y.Role.Name).ToArray()
+                    Roles = _ctx.UserRoles.Where(x => x.UserId == user.Id).Select(y => y.Role.Name).ToArray()
                 });
             }
             foreach (var customer in _ctx.Customers.Where(customer => !customer.IsDeleted))
@@ -39,7 +40,9 @@ namespace Store.Web.Models
 
         public Account Login(string username, string password)
         {
-            return _accounts.FirstOrDefault(x => x.Username.Equals(username) && x.Password.Equals(password));
+            return
+                _accounts.FirstOrDefault(
+                    x => x.Username.Equals(username) && StringHelper.VerifyMd5Hash(password, x.Password));
         }
     }
 }
